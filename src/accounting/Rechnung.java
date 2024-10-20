@@ -1,5 +1,8 @@
 package accounting;
 
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Rechnung {
@@ -16,4 +19,17 @@ public class Rechnung {
 	        this.artikelListe = new ArrayList<>();
 	        this.rechnungsDatum = rechnungsDatum;
 	    }
+	    
+	    
+	    public int getRechnungsNummer() {
+	        return rechnungsNummer;
+	    }
+	    public Kunde getKunde() {
+	        return kunde;
+	    }
+	    public Date getRechnungsDatum() {
+	        return rechnungsDatum;
+	    }
 }
+
+
