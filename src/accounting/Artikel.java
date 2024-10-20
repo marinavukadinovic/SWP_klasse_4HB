@@ -27,5 +27,7 @@ public class Artikel {
     }
 
 	
-	
+    Override  java.lang.String toString() {
+        return "Artikel: " + bezeichnung + ", Preis: " + preis;
+    }
 }
