@@ -31,6 +31,26 @@ public class Kunde {
 	    public Kontakt getKontakt() {
 	        return kontakt;
 	    }
+	    
+	     @Override
+		public String toString() {
+	        return "Kunde ID: " + kundenID + ", Name: " + name;
+	     } 
+	    
+	    public void Adresse (String strasse, String stadt, String plz){
+	            this.strasse = strasse;
+	            this.stadt = stadt;
+	            this.plz = plz;
+	    
+	    }
+	    
+	    String toString1() {
+	        return strasse + ", " + stadt + ", " + plz;
+	        }
 }
+
+	    
+	   
+	   
 
 
