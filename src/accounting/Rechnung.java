@@ -46,6 +46,15 @@ public class Rechnung {
 	        	gesamtbetrag += artikel.getPreis();        }        
 	        return gesamtbetrag;
 	    }
+	    
+	    @Override
+		public String toString() {
+	        return "Rechnung Nr: " + rechnungsNummer + ", Kunde: " + kunde + ", Datum: " + rechnungsDatum;
+	    }
+	}
+	    
+	    
+	    
 }
 
 
