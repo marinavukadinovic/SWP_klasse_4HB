@@ -1,5 +1,12 @@
 package accounting;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Artikel {
+
+	private static final AtomicInteger idCounter = new AtomicInteger(0);
+    private final int artikelNummer;
+    private String bezeichnung;
+    private double preis;
 
 }
