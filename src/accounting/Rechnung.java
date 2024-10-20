@@ -38,6 +38,14 @@ public class Rechnung {
 	    public void removeArtikel(Artikel artikel) {
 	        this.artikelListe.remove(artikel);
 	    }
+	    
+	    
+	    public double berechneGesamtbetrag() {
+	        double gesamtbetrag = 0;
+	        for (Artikel artikel : artikelListe) {
+	        	gesamtbetrag += artikel.getPreis();        }        
+	        return gesamtbetrag;
+	    }
 }
 
 
