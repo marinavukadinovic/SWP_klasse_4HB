@@ -30,6 +30,14 @@ public class Rechnung {
 	    public Date getRechnungsDatum() {
 	        return rechnungsDatum;
 	    }
+	    
+	    
+	    public void addArtikel(Artikel artikel) {
+	        this.artikelListe.add(artikel);
+	    }
+	    public void removeArtikel(Artikel artikel) {
+	        this.artikelListe.remove(artikel);
+	    }
 }
 
 
