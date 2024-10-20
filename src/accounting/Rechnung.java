@@ -10,5 +10,10 @@ public class Rechnung {
 	    private List<Artikel> artikelListe;
 	    private Date rechnungsDatum;
 
-	
+	    public Rechnung(Kunde kunde, Date rechnungsDatum) {
+	        this.rechnungsNummer = idCounter.incrementAndGet();
+	        this.kunde = kunde;
+	        this.artikelListe = new ArrayList<>();
+	        this.rechnungsDatum = rechnungsDatum;
+	    }
 }
