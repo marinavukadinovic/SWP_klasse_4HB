@@ -10,3 +10,10 @@ public class Artikel {
     private double preis;
 
 }
+
+	public Artikel(String bezeichnung, double preis) {
+    this.artikelNummer = idCounter.incrementAndGet();
+    this.bezeichnung = bezeichnung;
+    this.preis = preis;
+	}
+}
