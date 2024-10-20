@@ -8,7 +8,9 @@ public class Kunde {
 	    private final int kundenID;
 	    private String name;
 	    private String adresse;
-	    private int kontakt;
+	    private int kontakt; //angenommen Kontakt ist telefonnummer desshalb int
+		private String email;
+		private String telefon;
 	
 
 	public Kunde(String name, Adresse adresse, Kontakt kontakt) {
@@ -25,10 +27,10 @@ public class Kunde {
 	    public String getName() {
 	        return name;
 	    }
-	    public Adresse getAdresse() {
+	    public String getAdresse() {
 	        return adresse;
 	    }
-	    public Kontakt getKontakt() {
+	    public int getKontakt() {
 	        return kontakt;
 	    }
 	    
@@ -45,12 +47,24 @@ public class Kunde {
 	    }
 	    
 	    String toString1() {
-	        return strasse + ", " + stadt + ", " + plz;
+	        String strasse;
+			String stadt;
+			String plz;
+			return strasse + ", " + stadt + ", " + plz;
 	        }
-}
 
-	    
-	   
+
+		public void Kontakt(String telefon, String email) {
+		this.telefon = telefon;
+		this.email = email;
+		}
+		
+	
+		@Override String toString3() {
+			return "Telefon: " + telefon + ", E-Mail: " + email;
+			
+		}}
+		
 	   
 
 
