@@ -10,4 +10,11 @@ public class Kunde {
 	    private String adresse;
 	    private int kontakt;
 	
-}
+
+	public Kunde(String name, Adresse adresse, Kontakt kontakt) {
+    this.kundenID = idCounter.incrementAndGet();
+    this.name = name;
+    this.adresse = adresse;
+    this.kontakt = kontakt;
+    
+	}}
