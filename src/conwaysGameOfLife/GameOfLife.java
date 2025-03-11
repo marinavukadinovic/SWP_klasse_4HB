@@ -32,14 +32,14 @@ public class GameOfLife{
         }
         
  
-    public static void printFields() {
+    public static void printGrids() {
         for (int i = 0; i < gridLength; i++) {
             for (int j = 0; j < gridWidth; j++) {
                 System.out.print(" " + grid[i][j] + " ");
             }
             System.out.println();
         }}
-        
+    
     public void rules() {
         char[][] nextGrid = new char[gridWidth][gridLength];
         for (int j = 0; j < gridWidth; j++) {
@@ -114,7 +114,7 @@ public class GameOfLife{
 	public static void main(String[] args) {
         GameOfLife.GridSize();
         GameOfLife.InitializeRandomGrid();
-        GameOfLife.printFields();
+        GameOfLife.printGrids();
     }
 }
  
