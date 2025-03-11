@@ -20,7 +20,6 @@ public void testCalculateCircumference() {
 }
 
 
-
 @Test
 public void testToString() {
 	  Rectangle r = new Rectangle(1, 2, 3, 4);

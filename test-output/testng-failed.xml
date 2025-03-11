@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.MyMathTest">
+      <class name="formsTesting.CircleTest">
         <methods>
-          <include name="testDevision"/>
-          <include name="testSubtraction"/>
-          <include name="testMultiplication"/>
+          <include name="TestCalculateArea"/>
         </methods>
-      </class> <!-- testNG.MyMathTest -->
+      </class> <!-- formsTesting.CircleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
